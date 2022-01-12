@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const hello = <h1> Hello World !!!</h1>;
+import FirstApp from "./FirstApp";
+import "./index.css";
 
 const divRoot = document.querySelector("#app");
 
-ReactDOM.render(hello, divRoot);
+ReactDOM.render(<FirstApp hi="Hello, I'm a bot" />, divRoot);
+// ReactDOM.render(<FirstApp />, divRoot); // return console error

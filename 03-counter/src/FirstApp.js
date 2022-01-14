@@ -10,12 +10,13 @@
 
 import PropTypes from "prop-types";
 
-const FirstApp = ({ hi }) => {
+const FirstApp = ({ hi, subtitle }) => {
   const item = "Hello world";
   return (
     <>
       <h1>{item} !!!</h1>
       <h1>{hi} !!!</h1>
+      <h1>{subtitle} !!!</h1>
 
       {/* <pre> {JSON.stringify(item)} !!!</pre> */}
       <p> - My First APP -</p>
@@ -25,6 +26,10 @@ const FirstApp = ({ hi }) => {
 
 FirstApp.propTypes = {
   hi: PropTypes.string.isRequired,
+};
+
+FirstApp.defaultProps = {
+  subtitle: "Default Subtitle",
 };
 
 export default FirstApp;

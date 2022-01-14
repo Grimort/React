@@ -1,13 +1,19 @@
 import "@testing-library/jest-dom";
-import { getSaludo } from "../../base/02-template-string.js";
-describe("Template string test", () => {
-  test("Method getSaludo returns text and name", () => {
-    const name = "Fernando";
-    const grettings = getSaludo(name);
-    expect(grettings).toBe("Hola " + name);
+
+import { getSaludo } from "../../base/02-template-string";
+
+describe("Pruebas en 02-template-string.js", () => {
+  test("getSaludo debe de retornar Hola Fernando!", () => {
+    const nombre = "Fernando";
+
+    const saludo = getSaludo(nombre);
+
+    expect(saludo).toBe("Hola " + nombre);
   });
-  test("Method getSaludo returns default value", () => {
-    const grettings = getSaludo();
-    expect(grettings).toBe("Hola Carlos");
+
+  // getSaludo debe de retorar Hola Carlos! si no hay argumento nombre
+  test("getSaludo debe de retorar Hola Carlos si no hay argumento nombre", () => {
+    const saludo = getSaludo();
+    expect(saludo).toBe("Hola Carlos");
   });
 });

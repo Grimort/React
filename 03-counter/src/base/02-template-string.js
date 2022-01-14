@@ -6,7 +6,7 @@ const nombreCompleto = `${nombre} ${apellido}`;
 
 console.log(nombreCompleto);
 
-function getSaludo(nombre) {
+function getSaludo(nombre = "Carlos") {
   return "Hola " + nombre;
 }
 

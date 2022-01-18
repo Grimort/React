@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing FirstApp should to show FirstApp correctly 1`] = `
+<Fragment>
+  <h1>
+    Hello world
+     !!!
+  </h1>
+  <h1>
+    Hello world
+     
+  </h1>
+  <p>
+    Default Subtitle
+  </p>
+</Fragment>
+`;
+
+exports[`Testing FirstApp should to show FirstApp correctly with default subtitle 1`] = `
+<Fragment>
+  <h1>
+    Hello world
+     !!!
+  </h1>
+  <h1>
+    Hello world
+     
+  </h1>
+  <p>
+    Default Subtitle
+  </p>
+</Fragment>
+`;
